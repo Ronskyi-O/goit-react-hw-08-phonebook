@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { nanoid } from 'nanoid'
 import { useDispatch, useSelector } from 'react-redux'
-import { addContact } from 'redux/contacts.thunk';
+import { addContact } from 'redux/contacts/contacts.thunk';
 import { Form, Label, ButtonAddContact } from './ContactsAddForm.styled'
 
 

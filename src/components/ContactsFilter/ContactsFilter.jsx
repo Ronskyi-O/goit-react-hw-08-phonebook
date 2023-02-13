@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { setQuery } from '../../redux/contacts.slice'
+import { setQuery } from '../../redux/contacts/contacts.slice'
 
 import { FilterLabel } from './ContactsFilter.styled'
 

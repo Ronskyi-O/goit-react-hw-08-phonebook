@@ -1,9 +1,9 @@
 
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { STATUS } from 'redux/contacts.status'
-import { deleteContact, fetchContacts } from 'redux/contacts.thunk'
-import { selectFilteredContacts } from 'redux/selector'
+import { STATUS } from 'redux/contacts/contacts.status'
+import { deleteContact, fetchContacts } from 'redux/contacts/contacts.thunk'
+import { selectFilteredContacts } from 'redux/contacts/contacts.selectors'
 import { Loader } from 'components/Loader/Loader'
 
 import { ContsctList, ContactItem, ContactItemInfo, ContactItemButton } from './ContactsList.styled'
