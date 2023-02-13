@@ -6,3 +6,5 @@ export const authSlice = createSlice({
     initialState: authInitState,
 
 })
+
+export const authReducer = authSlice.reducer
