@@ -24,9 +24,9 @@ export const ContactsList = () => {
         <ContsctList>
             {(status === STATUS.idle || status === STATUS.loading) && <Loader />}
             {status === STATUS.error && <p>Вибачте, сталася помилка</p>}
-            {filteredContacts?.map(({ id, name, phone, }) => (
+            {filteredContacts?.map(({ id, name, number, }) => (
                 <ContactItem key={id}>
-                    <ContactItemInfo>{name}: {phone}</ContactItemInfo>
+                    <ContactItemInfo>{name}: {number}</ContactItemInfo>
                     <ContactItemButton onClick={() => onDeleteContact(id)}>Delete</ContactItemButton>
                 </ContactItem>
             ))}
