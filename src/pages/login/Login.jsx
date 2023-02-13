@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { login } from "redux/auth/auth.thunk"
+import { logIn } from "redux/auth/auth.thunk"
 import { Form, Label } from "./Login.styled"
 
 const Login = () => {
@@ -8,7 +8,7 @@ const Login = () => {
     const handleSubmit = e => {
         e.preventDefault();
         const form = e.currentTarget;
-        dispatch(login({
+        dispatch(logIn({
             email: form.elements.email.value,
             password: form.elements.password.value,
         }));
