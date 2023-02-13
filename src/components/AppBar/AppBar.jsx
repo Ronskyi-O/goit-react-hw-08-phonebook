@@ -1,3 +1,4 @@
+import { AuthNavigation } from "components/AuthNavigation/AuthNavigation"
 import { MainNavigation } from "components/MainNavigation/MainNavigation"
 import { UserMenu } from "components/UserMenu/UserMenu"
 
@@ -9,6 +10,7 @@ export const AppBar = () => {
         <Header>
             <MainNavigation />
             <UserMenu />
+            <AuthNavigation />
             {/* {isLoggedIn ? <UserMenu /> : <AuthNav />} */}
         </Header>
     )

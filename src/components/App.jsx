@@ -16,8 +16,8 @@ export function App() {
       <Route path='/' element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path='/contacts' element={<ContactsPage />} />
-        <Route path='/contacts' element={<RegisterPage />} />
-        <Route path='/contacts' element={<LoginPage />} />
+        <Route path='/register' element={<RegisterPage />} />
+        <Route path='/login' element={<LoginPage />} />
       </Route>
     </Routes>
   );
