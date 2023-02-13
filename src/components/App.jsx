@@ -1,8 +1,4 @@
-// import { useState, useEffect } from 'react';
-// import { nanoid } from 'nanoid'
-// import { ContactsAddForm } from 'components/ContactsAddForm/ContactsAddForm';
-// import { ContactsFilter } from 'components/ContactsFilter/ContactsFilter';
-// import { ContactsList } from 'components/ContactsList/ContactsList';
+
 import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
@@ -22,12 +18,5 @@ export function App() {
         <Route path='/contacts' element={<TasksPage />} />
       </Route>
     </Routes>
-
-    /* 
-    <PhonebookHeading>Phonebook</PhonebookHeading>
-    <ContactsAddForm />
-    <ContactsHeading>Contacs</ContactsHeading>
-    <ContactsFilter />
-    <ContactsList /> */
   );
 }
