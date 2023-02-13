@@ -4,9 +4,9 @@ import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 
 const HomePage = lazy(() => import('../pages/home/Home'));
-// const RegisterPage = lazy(() => import('../pages/Register'));
-// const LoginPage = lazy(() => import('../pages/Login'));
-const TasksPage = lazy(() => import('../pages/contacts/Contacts'));
+const RegisterPage = lazy(() => import('../pages/register/Register'));
+const LoginPage = lazy(() => import('../pages/login/Login'));
+const ContactsPage = lazy(() => import('../pages/contacts/Contacts'));
 
 
 export function App() {
@@ -15,7 +15,9 @@ export function App() {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path='/contacts' element={<TasksPage />} />
+        <Route path='/contacts' element={<ContactsPage />} />
+        <Route path='/contacts' element={<RegisterPage />} />
+        <Route path='/contacts' element={<LoginPage />} />
       </Route>
     </Routes>
   );

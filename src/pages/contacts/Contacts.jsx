@@ -12,7 +12,6 @@ const Contacts = () => {
             <ContactsFilter />
             <ContactsList />
         </Container>
-
     )
 }
 
