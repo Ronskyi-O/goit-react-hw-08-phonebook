@@ -2,7 +2,7 @@ import { Form, Label } from "./Login.styled"
 
 const Login = () => {
     return (
-        <Form utocomplete="off">
+        <Form autoComplete="off">
             <Label >
                 Email
                 <input type="email" name="email" />
