@@ -20,7 +20,6 @@ export function App() {
     dispatch(refreshUser())
   }, [dispatch])
 
-  console.log(isRefreshing);
   return (
     isRefreshing ? (
       <b>Be patient while we update info for you</b>
